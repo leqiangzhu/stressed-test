@@ -5,43 +5,45 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Transportation Survey</title>
+  <title>Medical Survey</title>
 </head>
 <body>
   <div class="container">
-    <h1>Transportation Survey</h1>
+    <h1>Medical Survey</h1>
     <form id="Survey">
+        <h2>Please check all the boxes that apply to you:</h2>
       <div class="form-group">
-        <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-        <input type="checkbox" name="question-work" value="hike">Hike.<br>
-        <input type="checkbox" name="question-work" value="horse">Ride a horse.<br>
-        <input type="checkbox" name="question-work" value="walk">Walked to work.<br>
-        <input type="checkbox" name="question-work" value="plane">Flew on a plane.<br>
-        <input type="checkbox" name="question-work" value="ran">Ran to work.<br>
-        <input type="checkbox" name="question-work" value="other">Another mode of transportation not listed here.<br>
+        <p>In the last year, have you felt:</p>
+        <input type="checkbox" name="question-warning" value="1"> stressed at work<br>
+        <input type="checkbox" name="question-warning" value="1"> stressed at home<br>
+        <input type="checkbox" name="question-warning" value="1"> a breakup/divorce<br>
+        <input type="checkbox" name="question-warning" value="1"> loss of job/employment<br>
+
       </div>
 
       <div class="form-group">
-        <p>In the past year, what I did on weekend was:</p>
-        <input type="checkbox" name="non-question-work" value="read">reading.<br>
-        <input type="checkbox" name="non-question-work" value="music">listen music.<br>
-        <input type="checkbox" name="non-question-work" value="movie">watch movie.<br>
-        <input type="checkbox" name="non-question-work" value="game">play game.<br>
-        <input type="checkbox" name="non-question-work" value="sport">play sport.<br>
-        <input type="checkbox" name="non-question-work" value="other">Another things.<br>
+        <p>What diagnosed medical issues affect you:</p>
+        <input type="checkbox" name="question-symptoms" value="2"> high blood pressure<br>
+        <input type="checkbox" name="question-symptoms" value="1"> anxiety<br>
+        <input type="checkbox" name="question-symptoms" value="1"> not sleeping well<br>
+        <input type="checkbox" name="question-symptoms" value="2"> depression<br>
+        <input type="checkbox" name="question-symptoms" value="1"> constantly sick.<br>
+
+      </div>
+
+      <div class="form-group">
+        <p>What forms of stress-management have you employed already?:</p>
+        <input type="checkbox" name="question-relief" value="2"> meditate<br>
+        <input type="checkbox" name="question-relief" value="1"> use a calendar<br>
+        <input type="checkbox" name="question-relief" value="1"> take vacations<br>
+        <input type="checkbox" name="question-relief" value="1"> have pets<br>
+        <input type="checkbox" name="question-relief" value="2"> get a massage<br>
+        <input type="checkbox" name="question-relief" value="1"> go hiking<br>
       </div>
       <button type="submit">Submit Survey</button>
     </form>
-
-
-
-
-
-
-
-
     <div id ="result">
-      <p>Solve this: </p><span id="output"> </span>
+      <p>Here are your results from your survey: </p><span id="output"> </span>
 
     </div>
 
